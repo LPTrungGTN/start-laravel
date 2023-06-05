@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCustomerRequest;
-use App\Http\Requests\UpdateCustomerRequest;
-use App\Models\Customer;
+use App\Http\Requests\StoreBlogRequest;
+use App\Http\Requests\UpdateBlogRequest;
+use App\Models\Blog;
 
-class CustomerController extends Controller
+class BlogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class CustomerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCustomerRequest  $request
+     * @param  \App\Http\Requests\StoreBlogRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCustomerRequest $request)
+    public function store(StoreBlogRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class CustomerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Customer  $customer
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Customer $customer)
+    public function show(Blog $blog)
     {
         //
     }
@@ -53,10 +53,10 @@ class CustomerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Customer  $customer
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Customer $customer)
+    public function edit(Blog $blog)
     {
         //
     }
@@ -64,11 +64,11 @@ class CustomerController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCustomerRequest  $request
-     * @param  \App\Models\Customer  $customer
+     * @param  \App\Http\Requests\UpdateBlogRequest  $request
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCustomerRequest $request, Customer $customer)
+    public function update(UpdateBlogRequest $request, Blog $blog)
     {
         //
     }
@@ -76,10 +76,10 @@ class CustomerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Customer  $customer
+     * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Customer $customer)
+    public function destroy(Blog $blog)
     {
         //
     }
